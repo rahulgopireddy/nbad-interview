@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const cors = require("cors");
+app.use(cors());
 const groceryList = [
   { item: "Bread", price: 2.99 },
   { item: "Milk", price: 1.99 },
